@@ -8,6 +8,6 @@ A fun demonstration of this was to have it parse the Sqlite database file on Mac
 
 The project uses a protocol added to both the catalyst app and the bundle target to define a common interface of communication. The catalyst app opens the embedded bundle, dynamically creates an instance of a class conforming to this custom protocol in the bundle, and then itself casts the class to the protocol itself so that the catalyst app can then interact with the code defined in the bundle, thus giving it full access to `AppKit`.
 
-I think this technique is neat because this lets you take a fully written iOS app and re-use 100% of it as a Mac App like you normally would with Catalyst, but then it additionally gives you the full power of AppKit to make your app feel _very_ native as it runs on MacOS. Overall giving you a quick way to port an iOS app to MacOS without sacrificing user experience.
+I think this technique is neat because this lets you take a fully written iOS app and re-use virtually all of it as a Mac App. This is something Catalyst gives you for free, but now you're additionally able to access AppKit and other MacOS APIs without restrictions, which enables you to make your iOS app feel fully at home on MacOS. Hopefully enabling you to provide a native-feeling experience for your users.
 
 Another interesting thing about this project is that it uses permanent bookmarks to persist access to the file outside of the sandbox, meaning when you quit and restart the application, it continues to have access to the non-sandbox app containing iMessages.
