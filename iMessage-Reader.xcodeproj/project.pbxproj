@@ -7,22 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		97A8FEF328EFA6ED00FF444E /* iMessage_ReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8FEF228EFA6ED00FF444E /* iMessage_ReaderApp.swift */; };
-		97A8FEF528EFA6ED00FF444E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8FEF428EFA6ED00FF444E /* ContentView.swift */; };
+		97A8FEF328EFA6ED00FF444E /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8FEF228EFA6ED00FF444E /* AppView.swift */; };
 		97A8FEF728EFA6ED00FF444E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A8FEF628EFA6ED00FF444E /* Assets.xcassets */; };
-		97A8FEFA28EFA6ED00FF444E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A8FEF928EFA6ED00FF444E /* Preview Assets.xcassets */; };
+		97A8FF0328EFCD2D00FF444E /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 97A8FF0228EFCD2D00FF444E /* SQLite */; };
+		97A8FF0628EFCD4B00FF444E /* MessageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8FF0528EFCD4B00FF444E /* MessageStore.swift */; };
+		97A8FF1228EFCE6F00FF444E /* AppKitBridgeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8FF1128EFCE6F00FF444E /* AppKitBridgeProtocol.swift */; };
+		97A8FF1328EFCE6F00FF444E /* AppKitBridgeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8FF1128EFCE6F00FF444E /* AppKitBridgeProtocol.swift */; };
+		97A8FF1628EFCEB600FF444E /* AppKitBridgeMacOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8FF1428EFCEB600FF444E /* AppKitBridgeMacOS.swift */; };
+		97A8FF1828EFCF5000FF444E /* AppKitBridgeCatalyst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8FF1728EFCF5000FF444E /* AppKitBridgeCatalyst.swift */; };
+		97A8FF1B28EFD08E00FF444E /* MessagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8FF1A28EFD08E00FF444E /* MessagesModel.swift */; };
+		97A8FF1E28EFD10200FF444E /* ConversationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8FF1D28EFD10200FF444E /* ConversationsView.swift */; };
+		97A8FF2028EFD2A100FF444E /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8FF1F28EFD2A100FF444E /* AppModel.swift */; };
+		97A8FF2328EFDA8700FF444E /* Color+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8FF2228EFDA8700FF444E /* Color+hex.swift */; };
+		97A8FF2528EFDC3500FF444E /* AppKitBridge.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 97A8FF0B28EFCE4600FF444E /* AppKitBridge.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		97A8FF2A28EFDCFD00FF444E /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8FF2928EFDCFD00FF444E /* ConversationView.swift */; };
+		97A8FF2C28EFE54B00FF444E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8FF2B28EFE54B00FF444E /* AppDelegate.swift */; };
+		97A8FF2E28EFF3DD00FF444E /* Notification+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8FF2D28EFF3DD00FF444E /* Notification+Custom.swift */; };
+		97A8FF2F28EFF3DD00FF444E /* Notification+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8FF2D28EFF3DD00FF444E /* Notification+Custom.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97A8FF2628EFDC3500FF444E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A8FEE728EFA6EC00FF444E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97A8FF0A28EFCE4600FF444E;
+			remoteInfo = AppKitBridge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		97A8FF2828EFDC3500FF444E /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				97A8FF2528EFDC3500FF444E /* AppKitBridge.bundle in Embed PlugIns */,
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		97A8FEEF28EFA6ED00FF444E /* iMessage-Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iMessage-Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		97A8FEF228EFA6ED00FF444E /* iMessage_ReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessage_ReaderApp.swift; sourceTree = "<group>"; };
-		97A8FEF428EFA6ED00FF444E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		97A8FEF228EFA6ED00FF444E /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		97A8FEF628EFA6ED00FF444E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		97A8FEF928EFA6ED00FF444E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		97A8FF0028EFA6FC00FF444E /* iMessage-Reader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iMessage-Reader.entitlements"; sourceTree = "<group>"; };
+		97A8FF0528EFCD4B00FF444E /* MessageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageStore.swift; sourceTree = "<group>"; };
+		97A8FF0B28EFCE4600FF444E /* AppKitBridge.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppKitBridge.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A8FF1028EFCE6F00FF444E /* AppKitBridge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppKitBridge-Bridging-Header.h"; sourceTree = "<group>"; };
+		97A8FF1128EFCE6F00FF444E /* AppKitBridgeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKitBridgeProtocol.swift; sourceTree = "<group>"; };
+		97A8FF1428EFCEB600FF444E /* AppKitBridgeMacOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKitBridgeMacOS.swift; sourceTree = "<group>"; };
+		97A8FF1728EFCF5000FF444E /* AppKitBridgeCatalyst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKitBridgeCatalyst.swift; sourceTree = "<group>"; };
+		97A8FF1A28EFD08E00FF444E /* MessagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesModel.swift; sourceTree = "<group>"; };
+		97A8FF1D28EFD10200FF444E /* ConversationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsView.swift; sourceTree = "<group>"; };
+		97A8FF1F28EFD2A100FF444E /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		97A8FF2228EFDA8700FF444E /* Color+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+hex.swift"; sourceTree = "<group>"; };
+		97A8FF2928EFDCFD00FF444E /* ConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
+		97A8FF2B28EFE54B00FF444E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97A8FF2D28EFF3DD00FF444E /* Notification+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Custom.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		97A8FEEC28EFA6ED00FF444E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A8FF0328EFCD2D00FF444E /* SQLite in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A8FF0828EFCE4600FF444E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,8 +92,10 @@
 		97A8FEE628EFA6EC00FF444E = {
 			isa = PBXGroup;
 			children = (
+				97A8FF0F28EFCE5300FF444E /* Bridge */,
 				97A8FEF128EFA6ED00FF444E /* iMessage-Reader */,
 				97A8FEF028EFA6ED00FF444E /* Products */,
+				97A8FF2428EFDC3500FF444E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -44,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				97A8FEEF28EFA6ED00FF444E /* iMessage-Reader.app */,
+				97A8FF0B28EFCE4600FF444E /* AppKitBridge.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,20 +111,69 @@
 		97A8FEF128EFA6ED00FF444E /* iMessage-Reader */ = {
 			isa = PBXGroup;
 			children = (
-				97A8FEF228EFA6ED00FF444E /* iMessage_ReaderApp.swift */,
-				97A8FEF428EFA6ED00FF444E /* ContentView.swift */,
+				97A8FF2128EFDA6F00FF444E /* Extensions */,
+				97A8FF1C28EFD0F000FF444E /* Views */,
+				97A8FF1928EFD07200FF444E /* Models */,
+				97A8FF0428EFCD3800FF444E /* Stores */,
+				97A8FF0028EFA6FC00FF444E /* iMessage-Reader.entitlements */,
 				97A8FEF628EFA6ED00FF444E /* Assets.xcassets */,
-				97A8FEF828EFA6ED00FF444E /* Preview Content */,
 			);
 			path = "iMessage-Reader";
 			sourceTree = "<group>";
 		};
-		97A8FEF828EFA6ED00FF444E /* Preview Content */ = {
+		97A8FF0428EFCD3800FF444E /* Stores */ = {
 			isa = PBXGroup;
 			children = (
-				97A8FEF928EFA6ED00FF444E /* Preview Assets.xcassets */,
+				97A8FF0528EFCD4B00FF444E /* MessageStore.swift */,
 			);
-			path = "Preview Content";
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		97A8FF0F28EFCE5300FF444E /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				97A8FF1128EFCE6F00FF444E /* AppKitBridgeProtocol.swift */,
+				97A8FF1028EFCE6F00FF444E /* AppKitBridge-Bridging-Header.h */,
+				97A8FF1428EFCEB600FF444E /* AppKitBridgeMacOS.swift */,
+				97A8FF1728EFCF5000FF444E /* AppKitBridgeCatalyst.swift */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		97A8FF1928EFD07200FF444E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				97A8FF1A28EFD08E00FF444E /* MessagesModel.swift */,
+				97A8FF1F28EFD2A100FF444E /* AppModel.swift */,
+				97A8FF2B28EFE54B00FF444E /* AppDelegate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		97A8FF1C28EFD0F000FF444E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97A8FEF228EFA6ED00FF444E /* AppView.swift */,
+				97A8FF1D28EFD10200FF444E /* ConversationsView.swift */,
+				97A8FF2928EFDCFD00FF444E /* ConversationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		97A8FF2128EFDA6F00FF444E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				97A8FF2228EFDA8700FF444E /* Color+hex.swift */,
+				97A8FF2D28EFF3DD00FF444E /* Notification+Custom.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		97A8FF2428EFDC3500FF444E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +186,37 @@
 				97A8FEEB28EFA6ED00FF444E /* Sources */,
 				97A8FEEC28EFA6ED00FF444E /* Frameworks */,
 				97A8FEED28EFA6ED00FF444E /* Resources */,
+				97A8FF2828EFDC3500FF444E /* Embed PlugIns */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97A8FF2728EFDC3500FF444E /* PBXTargetDependency */,
+			);
+			name = "iMessage-Reader";
+			packageProductDependencies = (
+				97A8FF0228EFCD2D00FF444E /* SQLite */,
+			);
+			productName = "iMessage-Reader";
+			productReference = 97A8FEEF28EFA6ED00FF444E /* iMessage-Reader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97A8FF0A28EFCE4600FF444E /* AppKitBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97A8FF0C28EFCE4600FF444E /* Build configuration list for PBXNativeTarget "AppKitBridge" */;
+			buildPhases = (
+				97A8FF0728EFCE4600FF444E /* Sources */,
+				97A8FF0828EFCE4600FF444E /* Frameworks */,
+				97A8FF0928EFCE4600FF444E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "iMessage-Reader";
-			productName = "iMessage-Reader";
-			productReference = 97A8FEEF28EFA6ED00FF444E /* iMessage-Reader.app */;
-			productType = "com.apple.product-type.application";
+			name = AppKitBridge;
+			productName = AppKitBridge;
+			productReference = 97A8FF0B28EFCE4600FF444E /* AppKitBridge.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +231,10 @@
 					97A8FEEE28EFA6ED00FF444E = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
+					97A8FF0A28EFCE4600FF444E = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
+					};
 				};
 			};
 			buildConfigurationList = 97A8FEEA28EFA6EC00FF444E /* Build configuration list for PBXProject "iMessage-Reader" */;
@@ -111,11 +246,15 @@
 				Base,
 			);
 			mainGroup = 97A8FEE628EFA6EC00FF444E;
+			packageReferences = (
+				97A8FF0128EFCD2D00FF444E /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
 			productRefGroup = 97A8FEF028EFA6ED00FF444E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				97A8FEEE28EFA6ED00FF444E /* iMessage-Reader */,
+				97A8FF0A28EFCE4600FF444E /* AppKitBridge */,
 			);
 		};
 /* End PBXProject section */
@@ -125,8 +264,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97A8FEFA28EFA6ED00FF444E /* Preview Assets.xcassets in Resources */,
 				97A8FEF728EFA6ED00FF444E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A8FF0928EFCE4600FF444E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +282,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97A8FEF528EFA6ED00FF444E /* ContentView.swift in Sources */,
-				97A8FEF328EFA6ED00FF444E /* iMessage_ReaderApp.swift in Sources */,
+				97A8FF0628EFCD4B00FF444E /* MessageStore.swift in Sources */,
+				97A8FF2328EFDA8700FF444E /* Color+hex.swift in Sources */,
+				97A8FF1B28EFD08E00FF444E /* MessagesModel.swift in Sources */,
+				97A8FF2E28EFF3DD00FF444E /* Notification+Custom.swift in Sources */,
+				97A8FF1228EFCE6F00FF444E /* AppKitBridgeProtocol.swift in Sources */,
+				97A8FF2028EFD2A100FF444E /* AppModel.swift in Sources */,
+				97A8FF1828EFCF5000FF444E /* AppKitBridgeCatalyst.swift in Sources */,
+				97A8FF1E28EFD10200FF444E /* ConversationsView.swift in Sources */,
+				97A8FEF328EFA6ED00FF444E /* AppView.swift in Sources */,
+				97A8FF2C28EFE54B00FF444E /* AppDelegate.swift in Sources */,
+				97A8FF2A28EFDCFD00FF444E /* ConversationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A8FF0728EFCE4600FF444E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A8FF1328EFCE6F00FF444E /* AppKitBridgeProtocol.swift in Sources */,
+				97A8FF1628EFCEB600FF444E /* AppKitBridgeMacOS.swift in Sources */,
+				97A8FF2F28EFF3DD00FF444E /* Notification+Custom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97A8FF2728EFDC3500FF444E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97A8FF0A28EFCE4600FF444E /* AppKitBridge */;
+			targetProxy = 97A8FF2628EFDC3500FF444E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		97A8FEFB28EFA6ED00FF444E /* Debug */ = {
@@ -264,9 +436,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "iMessage-Reader/iMessage-Reader.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iMessage-Reader/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 7G8MJMXW55;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -282,6 +455,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.davidz.iMessage-Reader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,9 +467,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "iMessage-Reader/iMessage-Reader.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iMessage-Reader/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 7G8MJMXW55;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -311,9 +486,71 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.davidz.iMessage-Reader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		97A8FF0D28EFCE4600FF444E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7G8MJMXW55;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidz.AppKitBridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridge/AppKitBridge-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		97A8FF0E28EFCE4600FF444E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7G8MJMXW55;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidz.AppKitBridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridge/AppKitBridge-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -338,7 +575,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		97A8FF0C28EFCE4600FF444E /* Build configuration list for PBXNativeTarget "AppKitBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97A8FF0D28EFCE4600FF444E /* Debug */,
+				97A8FF0E28EFCE4600FF444E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		97A8FF0128EFCD2D00FF444E /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		97A8FF0228EFCD2D00FF444E /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 97A8FF0128EFCD2D00FF444E /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 97A8FEE728EFA6EC00FF444E /* Project object */;
 }
